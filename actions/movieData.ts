@@ -28,3 +28,9 @@ const searchmovies = data.results
 return searchmovies
 
 }
+
+export const fetchMovieDetails = async (id: number) => {
+  const movieDetails = await getApiResponse(`/movie/${id}?append_to_response=videos`)
+
+  return movieDetails
+}

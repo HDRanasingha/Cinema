@@ -20,7 +20,7 @@ const Home =async() => {
      <Navbar />
      <Hero/>
      <div className='all-movies'>
-     {example.map((genre:Genre) => (
+     {genres.map((genre:Genre) => (
          <CategoryList key={genre.id} title={genre.name} movies={genre.movies} />
         ))}
     </div>
